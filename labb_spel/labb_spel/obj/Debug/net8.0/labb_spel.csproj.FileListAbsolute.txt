@@ -1,0 +1,14 @@
+C:\Users\kevin\OneDrive\Skrivbord\Prog_fors\Parprog\Labb1\Labb1\Labb1-progfors\labb_spel\labb_spel\bin\Debug\net8.0\labb_spel.exe
+C:\Users\kevin\OneDrive\Skrivbord\Prog_fors\Parprog\Labb1\Labb1\Labb1-progfors\labb_spel\labb_spel\bin\Debug\net8.0\labb_spel.deps.json
+C:\Users\kevin\OneDrive\Skrivbord\Prog_fors\Parprog\Labb1\Labb1\Labb1-progfors\labb_spel\labb_spel\bin\Debug\net8.0\labb_spel.runtimeconfig.json
+C:\Users\kevin\OneDrive\Skrivbord\Prog_fors\Parprog\Labb1\Labb1\Labb1-progfors\labb_spel\labb_spel\bin\Debug\net8.0\labb_spel.dll
+C:\Users\kevin\OneDrive\Skrivbord\Prog_fors\Parprog\Labb1\Labb1\Labb1-progfors\labb_spel\labb_spel\bin\Debug\net8.0\labb_spel.pdb
+C:\Users\kevin\OneDrive\Skrivbord\Prog_fors\Parprog\Labb1\Labb1\Labb1-progfors\labb_spel\labb_spel\obj\Debug\net8.0\labb_spel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kevin\OneDrive\Skrivbord\Prog_fors\Parprog\Labb1\Labb1\Labb1-progfors\labb_spel\labb_spel\obj\Debug\net8.0\labb_spel.AssemblyInfoInputs.cache
+C:\Users\kevin\OneDrive\Skrivbord\Prog_fors\Parprog\Labb1\Labb1\Labb1-progfors\labb_spel\labb_spel\obj\Debug\net8.0\labb_spel.AssemblyInfo.cs
+C:\Users\kevin\OneDrive\Skrivbord\Prog_fors\Parprog\Labb1\Labb1\Labb1-progfors\labb_spel\labb_spel\obj\Debug\net8.0\labb_spel.csproj.CoreCompileInputs.cache
+C:\Users\kevin\OneDrive\Skrivbord\Prog_fors\Parprog\Labb1\Labb1\Labb1-progfors\labb_spel\labb_spel\obj\Debug\net8.0\labb_spel.dll
+C:\Users\kevin\OneDrive\Skrivbord\Prog_fors\Parprog\Labb1\Labb1\Labb1-progfors\labb_spel\labb_spel\obj\Debug\net8.0\refint\labb_spel.dll
+C:\Users\kevin\OneDrive\Skrivbord\Prog_fors\Parprog\Labb1\Labb1\Labb1-progfors\labb_spel\labb_spel\obj\Debug\net8.0\labb_spel.pdb
+C:\Users\kevin\OneDrive\Skrivbord\Prog_fors\Parprog\Labb1\Labb1\Labb1-progfors\labb_spel\labb_spel\obj\Debug\net8.0\labb_spel.genruntimeconfig.cache
+C:\Users\kevin\OneDrive\Skrivbord\Prog_fors\Parprog\Labb1\Labb1\Labb1-progfors\labb_spel\labb_spel\obj\Debug\net8.0\ref\labb_spel.dll

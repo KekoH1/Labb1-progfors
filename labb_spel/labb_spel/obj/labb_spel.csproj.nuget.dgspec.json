@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kevin\\OneDrive\\Skrivbord\\Prog_fors\\Parprog\\Labb1\\Labb1\\Labb1-progfors\\labb_spel\\labb_spel\\labb_spel.csproj": {}
+    "C:\\Users\\kiddo\\Source\\Repos\\Labb1-progfors\\labb_spel\\labb_spel\\labb_spel.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kevin\\OneDrive\\Skrivbord\\Prog_fors\\Parprog\\Labb1\\Labb1\\Labb1-progfors\\labb_spel\\labb_spel\\labb_spel.csproj": {
+    "C:\\Users\\kiddo\\Source\\Repos\\Labb1-progfors\\labb_spel\\labb_spel\\labb_spel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kevin\\OneDrive\\Skrivbord\\Prog_fors\\Parprog\\Labb1\\Labb1\\Labb1-progfors\\labb_spel\\labb_spel\\labb_spel.csproj",
+        "projectUniqueName": "C:\\Users\\kiddo\\Source\\Repos\\Labb1-progfors\\labb_spel\\labb_spel\\labb_spel.csproj",
         "projectName": "labb_spel",
-        "projectPath": "C:\\Users\\kevin\\OneDrive\\Skrivbord\\Prog_fors\\Parprog\\Labb1\\Labb1\\Labb1-progfors\\labb_spel\\labb_spel\\labb_spel.csproj",
-        "packagesPath": "C:\\Users\\kevin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kevin\\OneDrive\\Skrivbord\\Prog_fors\\Parprog\\Labb1\\Labb1\\Labb1-progfors\\labb_spel\\labb_spel\\obj\\",
+        "projectPath": "C:\\Users\\kiddo\\Source\\Repos\\Labb1-progfors\\labb_spel\\labb_spel\\labb_spel.csproj",
+        "packagesPath": "C:\\Users\\kiddo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kiddo\\Source\\Repos\\Labb1-progfors\\labb_spel\\labb_spel\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\kevin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kiddo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

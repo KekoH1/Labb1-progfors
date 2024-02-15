@@ -1,13 +1,14 @@
-﻿namespace Game
-{
-    public class Program
-    {
-        public static void Main(string[] args)
-        {
-            PlayerMove();
-        }
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-        public static void PlayerMove()
+namespace Game
+{
+    public class PlayerMovement
+    {
+       /* public void PlayerMove()
         {
             //movement 
             int redo = 0;
@@ -35,6 +36,7 @@
             } while (redo == 0);
             Console.ReadLine();
             return;
-        }
+       }*/
+       
     }
 }

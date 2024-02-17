@@ -2,39 +2,15 @@
 {
     public class Program
     {
+        
         public static void Main(string[] args)
         {
-            PlayerMove();
-        }
-
-        public static void PlayerMove()
-        {
-            //movement 
-            int redo = 0;
-            int sides = 20;
-
-            ConsoleKeyInfo KeyInfo; do
+            TheWorld World = new TheWorld();
+            while (true)
             {
-                KeyInfo = Console.ReadKey(true);
-                Console.Clear();
-
-                switch (KeyInfo.Key)
-                {
-                    case ConsoleKey.RightArrow:
-                        sides++;
-                        Console.SetCursorPosition(sides, 10);
-                        Console.Write("X");
-                        break;
-                    case ConsoleKey.LeftArrow:
-                        sides--;
-                        Console.SetCursorPosition(sides, 10);
-                        Console.Write("X");
-                        break;
-                }
-
-            } while (redo == 0);
-            Console.ReadLine();
-            return;
+                World.PrintWorld();
+                World.PlayerMovement();
+            }
         }
     }
 }

@@ -26,9 +26,7 @@ namespace Game
 
             CreateWorld();
 
-            Grid[PlayerLocationX, PlayerLocationY] = 'P';
-
-
+            Grid[PlayerLocationX, PlayerLocationY] = '🐵';
         }
 
         public void CreateWorld()
@@ -37,7 +35,7 @@ namespace Game
             {
                 for(int j = 0; j < WorldSizeY; j++)
                 {
-                    Grid[i, j] = '^';
+                    Grid[i, j] = ' ';
                 }
             }
         }
@@ -74,33 +72,28 @@ namespace Game
             {
                 case ConsoleKey.RightArrow:
                     Grid[PlayerLocationX, PlayerLocationY + 1] = 'P';
-                    Grid[PlayerLocationX, PlayerLocationY] = '^';
+                    Grid[PlayerLocationX, PlayerLocationY] = ' ';
                     PlayerLocationY++;
-
-
-                    
                     break;
+
                 case ConsoleKey.LeftArrow:
                     Grid[PlayerLocationX, PlayerLocationY -1] = 'P';
-                    Grid[PlayerLocationX, PlayerLocationY] = '^';
+                    Grid[PlayerLocationX, PlayerLocationY] = ' ';
                     PlayerLocationY--;
-
-
                     break;
+
                 case ConsoleKey.UpArrow:
                     Grid[PlayerLocationX-1, PlayerLocationY ] = 'P';
-                    Grid[PlayerLocationX, PlayerLocationY] = '^';
+                    Grid[PlayerLocationX, PlayerLocationY] = ' ';
                     PlayerLocationX--;
-
-
                     break;
+
                 case ConsoleKey.DownArrow:
                     Grid[PlayerLocationX+1, PlayerLocationY] = 'P';
-                    Grid[PlayerLocationX, PlayerLocationY] = '^';
+                    Grid[PlayerLocationX, PlayerLocationY] = ' ';
                     PlayerLocationX++;
-
-
                     break;
+
             }   
         }
     }

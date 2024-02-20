@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kiddo\\Source\\Repos\\Labb1-progfors\\labb_spel\\labb_spel\\labb_spel.csproj": {}
+    "C:\\Users\\kiddo\\Source\\Repos\\KekoH1\\Labb1-progfors\\labb_spel\\labb_spel\\labb_spel.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kiddo\\Source\\Repos\\Labb1-progfors\\labb_spel\\labb_spel\\labb_spel.csproj": {
+    "C:\\Users\\kiddo\\Source\\Repos\\KekoH1\\Labb1-progfors\\labb_spel\\labb_spel\\labb_spel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kiddo\\Source\\Repos\\Labb1-progfors\\labb_spel\\labb_spel\\labb_spel.csproj",
+        "projectUniqueName": "C:\\Users\\kiddo\\Source\\Repos\\KekoH1\\Labb1-progfors\\labb_spel\\labb_spel\\labb_spel.csproj",
         "projectName": "labb_spel",
-        "projectPath": "C:\\Users\\kiddo\\Source\\Repos\\Labb1-progfors\\labb_spel\\labb_spel\\labb_spel.csproj",
+        "projectPath": "C:\\Users\\kiddo\\Source\\Repos\\KekoH1\\Labb1-progfors\\labb_spel\\labb_spel\\labb_spel.csproj",
         "packagesPath": "C:\\Users\\kiddo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kiddo\\Source\\Repos\\Labb1-progfors\\labb_spel\\labb_spel\\obj\\",
+        "outputPath": "C:\\Users\\kiddo\\Source\\Repos\\KekoH1\\Labb1-progfors\\labb_spel\\labb_spel\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

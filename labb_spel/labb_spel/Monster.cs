@@ -8,6 +8,6 @@ namespace Game
 {
     public class Monster
     {
-        //Monster, creature och djur
+        //Monster och varelser 
     }
 }

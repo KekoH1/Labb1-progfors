@@ -99,7 +99,7 @@ namespace Game
     }
 }
 */
-using System;
+/*using System;
 
 namespace Game
 {
@@ -189,6 +189,106 @@ namespace Game
                     Grid[PlayerLocationX, PlayerLocationY] = ' ';
                     PlayerLocationX++;
                     break;
+            }
+        }
+    }
+}
+*/
+using System;
+
+namespace Game
+{
+    public class TheWorld
+    {
+        public char[,] Grid;
+        public int PlayerLocationX;
+        public int PlayerLocationY;
+        public int WorldSizeX;
+        public int WorldSizeY;
+
+        public TheWorld()
+        {
+            WorldSizeX = 25;
+            WorldSizeY = 70;
+
+            Grid = new char[WorldSizeX, WorldSizeY];
+            PlayerLocationX = 2;
+            PlayerLocationY = 2;
+
+            CreateWorld();
+
+            Grid[PlayerLocationX, PlayerLocationY] = 'P';
+        }
+
+        public void CreateWorld()
+        {
+            for (int i = 0; i < WorldSizeX; i++)
+            {
+                for (int j = 0; j < WorldSizeY; j++)
+                {
+                    if (i == 0 || i == WorldSizeX - 1 || j == 0 || j == WorldSizeY - 1)
+                    {
+                        Grid[i, j] = '#';
+                    }
+                    else
+                    {
+                        Grid[i, j] = ' ';
+                    }
+                }
+            }
+        }
+
+        public void PrintWorld()
+        {
+            Console.Clear();
+
+            for (int i = 0; i < WorldSizeX; i++)
+            {
+                for (int j = 0; j < WorldSizeY; j++)
+                {
+                    Console.Write(Grid[i, j]);
+                }
+
+                Console.WriteLine();
+            }
+        }
+
+        public void PlayerMovement()
+        {
+            ConsoleKeyInfo KeyInfo = Console.ReadKey(true);
+            Console.Clear();
+
+            int newPlayerLocationX = PlayerLocationX;
+            int newPlayerLocationY = PlayerLocationY;
+
+            switch (KeyInfo.Key)
+            {
+                case ConsoleKey.RightArrow:
+                    newPlayerLocationY++;
+                    break;
+
+                case ConsoleKey.LeftArrow:
+                    newPlayerLocationY--;
+                    break;
+
+                case ConsoleKey.UpArrow:
+                    newPlayerLocationX--;
+                    break;
+
+                case ConsoleKey.DownArrow:
+                    newPlayerLocationX++;
+                    break;
+            }
+
+            // Gränstestning för att förhindra att spelaren går utanför spelplanen
+            if (newPlayerLocationX > 0 && newPlayerLocationX < WorldSizeX - 1 &&
+                newPlayerLocationY > 0 && newPlayerLocationY < WorldSizeY - 1)
+            {
+                // Uppdatera spelplanen och spelarens position om gränstestningen passerar
+                Grid[newPlayerLocationX, newPlayerLocationY] = 'P';
+                Grid[PlayerLocationX, PlayerLocationY] = ' ';
+                PlayerLocationX = newPlayerLocationX;
+                PlayerLocationY = newPlayerLocationY;
             }
         }
     }

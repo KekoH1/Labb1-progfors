@@ -6,31 +6,17 @@ using System.Threading.Tasks;
 
 namespace labb_spel
 {
-    public abstract class Entitet
+    public class Entitet
     {
+        public int X { get; set; }
+        public int Y { get; set; }
+        public char Symbol { get; set; }
 
-       public string name;
-       public int strenght;
-       public int stamina;
-       public int vitality;
-       public int agility;
-        public Entitet (string name, int strenght, int stamina, int vitality, int agility) //Arv som de olika monster, djur och spelare kommar ett ärva ifrån
+        public Entitet(int x, int y, char symbol)
         {
-            this.name = name;
-            this.strenght = strenght;
-            this.stamina = stamina;
-            this.vitality = vitality;
-            this.agility = agility;
-
+            X = x;
+            Y = y;
+            Symbol = symbol;
         }
-
-        public abstract string EntitetHp();
-        public abstract string EntitetMp();
-
-        public abstract string EntitetStr();
-        public abstract string EntitetStam();
-
-        public abstract string EntitetVit();
-        public abstract string EntitetAgi();
     }
 }

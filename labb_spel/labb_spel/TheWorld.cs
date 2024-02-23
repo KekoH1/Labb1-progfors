@@ -111,21 +111,26 @@ namespace Game
         public int PlayerLocationY;
         public int WorldSizeX;
         public int WorldSizeY;
+        public List<Item> Items;
+        public List<Varelse> Varelser;
 
         public TheWorld()
         {
-            WorldSizeX = 25;
-            WorldSizeY = 70;
+            WorldSizeX = 10;
+            WorldSizeY = 10;
 
             Grid = new char[WorldSizeX, WorldSizeY];
             PlayerLocationX = 2;
             PlayerLocationY = 2;
+            Items = new List<Item>();
+            Varelser = new List<Varelse>();
 
             CreateWorld();
 
             Grid[PlayerLocationX, PlayerLocationY] = 'P';
         }
 
+        //Spelplan
         public void CreateWorld()
         {
             for (int i = 0; i < WorldSizeX; i++)
@@ -142,6 +147,58 @@ namespace Game
                     }
                 }
             }
+        }
+        //Items
+        public void GenerateRandomItems(int numberOfItems)
+        {
+            Random random = new Random();
+
+            for (int i = 0; i < numberOfItems; i++)
+            {
+                int randomX = random.Next(1, WorldSizeX - 1);
+                int randomY = random.Next(1, WorldSizeY - 1);
+                string itemName = "Item" + (i + 1);
+
+                Item newItem = new Item(randomX, randomY, 'I', itemName);
+                Items.Add(newItem);
+                Grid[randomX, randomY] = newItem.Symbol;
+            }
+        }
+        //Varelser
+        public void GenerateRandomVarelsers(int numberOfVarelser)
+        {
+            Random random = new Random();
+            for (int i = 0; i < numberOfVarelser; i++)
+            {
+                int randomX = random.Next(1, WorldSizeX - 1);
+                int randomY = random.Next(1, WorldSizeY - 1);
+                string VarelsersName = "Varelse" + (i + 1);
+
+                while (IsPositionOccupied(randomX, randomY))
+                {
+                    randomX = random.Next(1, WorldSizeX - 1);
+                    randomY = random.Next(1, WorldSizeY - 1);
+                }
+
+                int strength = random.Next(1, 10);
+                int endurance = random.Next(1, 10);
+                int agility = random.Next(1, 10);
+
+                Varelse newVarelse = new Varelse(randomX, randomY, 'V', VarelsersName, strength, endurance, agility);
+                Varelser.Add(newVarelse);
+                Grid[randomX, randomY] = newVarelse.Symbol;
+
+            }
+
+        }
+
+        private bool IsPositionOccupied(int randomX, int randomY)
+        {
+            if (Grid[randomX, randomY] != ' ')
+            {
+                return true;
+            }
+            return false;
         }
 
         public void PrintWorld()
@@ -195,7 +252,35 @@ namespace Game
                 Grid[PlayerLocationX, PlayerLocationY] = ' ';
                 PlayerLocationX = newPlayerLocationX;
                 PlayerLocationY = newPlayerLocationY;
+
+                Varelse varelseAtPlayerPosition = GetVarelseAtPosition(PlayerLocationX, PlayerLocationY);
+                if (varelseAtPlayerPosition != null)
+                {
+                    /*Console.WriteLine($"Möter {varelseAtPlayerPosition.Name}");*/ // klass för combat
+                }
             }
+
+            foreach (Item item in Items)
+            {
+                if (PlayerLocationX == item.X && PlayerLocationY == item.Y)
+                {
+                    /*Console.WriteLine($"Player picked up {item.Name}");*/ // skapa en inventory klass som skriver ut vilka items man har
+                    Items.Remove(item);
+                    break;
+                }
+            }
+        }
+
+        public Varelse GetVarelseAtPosition(int x, int y)
+        {
+            foreach (Varelse varelse in Varelser)
+            {
+                if (varelse.X == x && varelse.Y == y)
+                {
+                    return varelse;
+                }
+            }
+            return null;
         }
     }
 }

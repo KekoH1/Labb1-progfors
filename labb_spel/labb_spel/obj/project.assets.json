@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\kevin\\.nuget\\packages\\": {}
+    "C:\\Users\\Leo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kevin\\Source\\Repos\\Labb1-progfors\\labb_spel\\labb_spel\\labb_spel.csproj",
+      "projectUniqueName": "C:\\Users\\Leo\\OneDrive\\Dokument\\Labb1 progfort\\Labb1-progfors\\labb_spel\\labb_spel\\labb_spel.csproj",
       "projectName": "labb_spel",
-      "projectPath": "C:\\Users\\kevin\\Source\\Repos\\Labb1-progfors\\labb_spel\\labb_spel\\labb_spel.csproj",
-      "packagesPath": "C:\\Users\\kevin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kevin\\Source\\Repos\\Labb1-progfors\\labb_spel\\labb_spel\\obj\\",
+      "projectPath": "C:\\Users\\Leo\\OneDrive\\Dokument\\Labb1 progfort\\Labb1-progfors\\labb_spel\\labb_spel\\labb_spel.csproj",
+      "packagesPath": "C:\\Users\\Leo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Leo\\OneDrive\\Dokument\\Labb1 progfort\\Labb1-progfors\\labb_spel\\labb_spel\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\kevin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Leo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -40,6 +40,9 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "default"
       }
     },
     "frameworks": {
